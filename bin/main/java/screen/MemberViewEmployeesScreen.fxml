@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="665.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="contentArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="1080.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="207.0" text="All Coaches" textAlignment="CENTER" textFill="#3d5c98">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="30.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="1050.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="65.0" prefWidth="172.0" text="Total coaches number: " textFill="#3d5c98">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalCoachesNumber" prefHeight="65.0" prefWidth="116.0">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="1080.0">
+                     <children>
+                        <TextField fx:id="searchField" promptText="search for coach" />
+                        <Button fx:id="searchBtn" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" style="-fx-background-color: #3d5c98;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <RadioButton fx:id="coachNameButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="116.0" text="coach name" textFill="#3d5c98">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="roomIdButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="116.0" text="room id" textFill="#3d5c98">
+                           <font>
+                              <Font name="Arial Bold" size="14.0" />
+                           </font>
+                        </RadioButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="30.0" prefWidth="1080.0">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text fx:id="searchValidNoti" fill="#dd0e0e" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="281.3208255767822">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="coachesTable" prefHeight="422.0" prefWidth="1080.0" stylesheets="@../../../../../../Downloads/table.css" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

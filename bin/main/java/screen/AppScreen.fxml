@@ -22,7 +22,7 @@
                         <Image url="@../../../../../../Downloads/gym_7499944.png" />
                      </image>
                   </ImageView>
-                  <Text fill="#3d5c98" fontSmoothingType="LCD" stroke="#976565" strokeWidth="0.0" text="GyMaster" textAlignment="CENTER" wrappingWidth="190.9158477783203">
+                  <Text fill="#3d5c98" fontSmoothingType="LCD" stroke="#976565" strokeWidth="0.0" text="GyMaster" textAlignment="CENTER" wrappingWidth="146.9158477783203">
                      <font>
                         <Font name="Arial Black" size="24.0" />
                      </font>

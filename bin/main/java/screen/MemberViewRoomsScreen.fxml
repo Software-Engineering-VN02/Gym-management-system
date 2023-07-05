@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="665.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="allContentArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="1080.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="207.0" text="All Rooms" textAlignment="CENTER" textFill="#3d5c98">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="28.0" prefWidth="1050.0">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="65.0" prefWidth="172.0" text="Total Rooms number: " textFill="#3d5c98">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalRoomsNumber" prefHeight="65.0" prefWidth="116.0">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="1080.0">
+                     <VBox.margin>
+                        <Insets bottom="4.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="searchField" prefHeight="36.0" prefWidth="214.0" />
+                        <Button fx:id="searchBtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" style="-fx-background-color: #3d5c98;" text="Search" textFill="WHITE" />
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="30.0" prefWidth="1080.0">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Text fx:id="searchValidNoti" fill="#dd0e0e" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="281.3208255767822">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="roomsTable" prefHeight="422.0" prefWidth="1080.0" stylesheets="@../../../../../../Downloads/table.css" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

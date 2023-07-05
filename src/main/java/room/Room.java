@@ -6,13 +6,45 @@ public class Room {
 	
 	private String roomName;
 	
-	private int employee_in_charge_id;
+	private int employeeInChargeId;
 	
-	public Room(int roomId, String roomName, int employee_in_charge_id) {
+	private int employeeCount;
+	
+	private String employeeList;
+
+	public void setEquipmentList(String equipmentList) {
+		this.equipmentList = equipmentList;
+	}
+
+	public String getCourseList() {
+		return courseList;
+	}
+
+	public void setCourseList(String courseList) {
+		this.courseList = courseList;
+	}
+
+	private String equipmentList;
+	
+	private String courseList;
+	
+	public Room(int roomId, String roomName, int employeeInChargeId) {
 		super();
 		this.roomId = roomId;
 		this.roomName = roomName;
-		this.employee_in_charge_id = employee_in_charge_id;
+		this.employeeInChargeId = employeeInChargeId;
+	}
+
+	public Room(int roomId, String roomName, int employeeInChargeId, int employeeCount, String employeeList,
+			String equipmentList, String courseList) {
+		super();
+		this.roomId = roomId;
+		this.roomName = roomName;
+		this.employeeInChargeId = employeeInChargeId;
+		this.employeeCount = employeeCount;
+		this.employeeList = employeeList;
+		this.equipmentList = equipmentList;
+		this.courseList = courseList;
 	}
 
 	public int getRoomId() {
@@ -31,13 +63,31 @@ public class Room {
 		this.roomName = roomName;
 	}
 
-	public int getEmployee_in_charge_id() {
-		return employee_in_charge_id;
+	public int getEmployeeInChargeId() {
+		return employeeInChargeId;
 	}
 
-	public void setEmployee_in_charge_id(int employee_in_charge_id) {
-		this.employee_in_charge_id = employee_in_charge_id;
+	public void setEmployeeInChargeId(int employeeInChargeId) {
+		this.employeeInChargeId = employeeInChargeId;
 	}
-	
+	public int getEmployeeCount() {
+		return employeeCount;
+	}
+
+	public void setEmployeeCount(int employeeCount) {
+		this.employeeCount = employeeCount;
+	}
+
+	public String getEmployeeList() {
+		return employeeList;
+	}
+
+	public void setEmployeeList(String employeeList) {
+		this.employeeList = employeeList;
+	}
+
+	public String getEquipmentList() {
+		return equipmentList;
+	}
 	
 }

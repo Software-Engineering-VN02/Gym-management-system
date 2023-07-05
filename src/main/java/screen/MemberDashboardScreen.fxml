@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="app_name" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="allContentArea" prefHeight="668.0" prefWidth="939.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="38.0" prefWidth="900.0" style="-fx-background-color: #b1ccc8;">
+                     <children>
+                        <Button fx:id="roomsTab" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Rooms" />
+                        <Button fx:id="myCoursesTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="My courses" />
+                        <Button fx:id="coachesTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Coaches" />
+                        <Button fx:id="feedbackTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="112.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Feedback" />
+                        <Button fx:id="historyTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="92.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="History" />
+                        <ImageView fx:id="accountTab" fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/account1.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="350.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="79.0" styleClass="logoutBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Log out" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <StackPane fx:id="contentArea" prefHeight="665.0" prefWidth="1080.0" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   
+</BorderPane>

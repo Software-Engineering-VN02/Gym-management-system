@@ -1,22 +1,44 @@
 package main.java.employee.rooms;
 
-import java.net.URL;
-import java.util.ResourceBundle;
+import java.io.IOException;
+import java.util.List;
 
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.TableView;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import main.java.course.Course;
+import main.java.employee.room.EmployeeViewRoomController;
+import main.java.equipment.Equipment;
+import main.java.member.rooms.MemberViewRoomsController;
 import main.java.room.Room;
 
-public class EmployeeViewRoomsController implements Initializable{
+public class EmployeeViewRoomsController extends MemberViewRoomsController{
 
-    @FXML
-    private TableView<Room> roomsTable;
-
+	public EmployeeViewRoomsController(List<Room> rooms) {
+		super(rooms);
+	}
+	
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	protected void seeRoomDetail(Room room, List<Course> roomCourses, List<Equipment> equipments) {
+		
+		FXMLLoader loader1 = new FXMLLoader(getClass().getResource("/main/java/screen/MemberViewRoomScreen.fxml"));   
+				
+		EmployeeViewRoomController employeeViewRoomController = new EmployeeViewRoomController(room, roomCourses, equipments);
 			
+	    loader1.setController(employeeViewRoomController);
+	    
+	    try {
+			
+			Parent fxml = loader1.load();
+				
+			allContentArea.getChildren().removeAll();
+				
+			allContentArea.getChildren().setAll(fxml);
+				
+		} catch (IOException e1) {
+				
+			e1.printStackTrace();
+			
+		}
 			
 	}
-
 }

@@ -14,7 +14,9 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
+import main.java.admin.dashboard.AdminDashboardController;
 import main.java.employee.dashboard.EmployeeDashboardController;
+import main.java.member.dashboard.MemberDashboardController;
 
 public class LoginController implements Initializable{
 	
@@ -64,13 +66,33 @@ public class LoginController implements Initializable{
 
 			if(logInfo.containsKey(userName)) {
 								
-				if (userName.equals("employee") && password.equals("123")) {
+				if (userName.equals("employee") && password.equals(logInfo.get(userName))) {
 										
 					FXMLLoader loader = new FXMLLoader(getClass().getResource("/main/java/screen/EmployeeDashboardScreen.fxml"));    	
 					
 					EmployeeDashboardController employeeDashboardController = new EmployeeDashboardController();
 					
 					loader.setController(employeeDashboardController);
+										
+					loadAfterLogin(loader);
+					
+				} else if (userName.equals("member") && password.equals(logInfo.get(userName))) {
+					
+					FXMLLoader loader = new FXMLLoader(getClass().getResource("/main/java/screen/MemberDashboardScreen.fxml"));    	
+					
+					MemberDashboardController memberDashboardController = new MemberDashboardController();
+					
+					loader.setController(memberDashboardController);
+										
+					loadAfterLogin(loader);
+					
+				} else if (userName.equals("admin") && password.equals(logInfo.get(userName))) {
+					
+					FXMLLoader loader = new FXMLLoader(getClass().getResource("/main/java/screen/AdminDashboardScreen.fxml"));    	
+					
+					AdminDashboardController adminDashboardController = new AdminDashboardController();
+					
+					loader.setController(adminDashboardController);
 										
 					loadAfterLogin(loader);
 				}

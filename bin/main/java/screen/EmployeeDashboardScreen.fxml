@@ -21,19 +21,20 @@
                      <children>
                         <Button fx:id="roomsTab" mnemonicParsing="false" prefHeight="42.0" prefWidth="122.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Rooms" />
                         <Button fx:id="myRoomTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="153.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="My Room" />
-                        <Button fx:id="myMembersTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="My member" />
-                        <ImageView fx:id="notificationIcon" fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                        <Button fx:id="membersTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="142.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Members" />
+                        <Button fx:id="feedbackTab" mnemonicParsing="false" prefHeight="41.0" prefWidth="112.0" styleClass="dashboardBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Feedback" />
+                        <ImageView fx:id="accountIcon" fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../../Downloads/icons8-notification-50.png" />
+                              <Image url="@../../../../../../Downloads/account1.png" />
                            </image>
                            <HBox.margin>
-                              <Insets left="550.0" right="10.0" />
+                              <Insets left="430.0" right="10.0" />
                            </HBox.margin>
                         </ImageView>
                         <Button fx:id="logoutButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="79.0" styleClass="logoutBtn" stylesheets="@../../../../../../Desktop/styleDashboard.css" text="Log out" textFill="WHITE" />
                      </children>
                   </HBox>
-                  <StackPane fx:id="contentArea" prefHeight="504.0" prefWidth="900.0" />
+                  <StackPane fx:id="contentArea" prefHeight="665.0" prefWidth="1080.0" />
                </children>
             </VBox>
          </children>

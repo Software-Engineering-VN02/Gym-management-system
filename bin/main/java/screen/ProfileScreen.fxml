@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="665.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <StackPane fx:id="allContentArea" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="61.0" prefWidth="1080.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="207.0" text="Member Profile" textAlignment="CENTER" textFill="#3d5c98">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="130.0" prefWidth="1080.0">
+                     <children>
+                        <ImageView fitHeight="138.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../Downloads/austin-wade-X6Uj51n5CE8-unsplash.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="130.0" prefWidth="926.0" style="-fx-background-color: #3d5c9849; -fx-background-radius: 10;">
+                           <children>
+                              <HBox prefHeight="34.0" prefWidth="766.0">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="50.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="49.0" text="ID: " textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="memberId" prefHeight="61.0" prefWidth="126.0" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font></Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="34.0" prefWidth="766.0">
+                                 <children>
+                                    <Label prefHeight="34.0" prefWidth="49.0" text="Name: " textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="memberName" prefHeight="61.0" prefWidth="126.0" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font></Label>
+                                    <Label prefHeight="34.0" prefWidth="66.0" text="Gender:" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="memberGender" prefHeight="61.0" prefWidth="126.0" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font></Label>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="69.0" text="Age: " textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="memberAge" prefHeight="61.0" prefWidth="126.0" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font></Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="34.0" prefWidth="766.0">
+                                 <children>
+                                    <Label prefHeight="24.0" prefWidth="57.0" text="Height:" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane fx:id="memberHeightStackPane" prefHeight="24.0" prefWidth="118.0">
+                                       <children>
+                                          <Label fx:id="memberHeight" prefHeight="24.0" prefWidth="111.0" textFill="#3d5c98">
+                                             <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                             </font></Label>
+                                       </children>
+                                    </StackPane>
+                                    <ImageView fx:id="memberHeightModifyButton" fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../Downloads/icons8-edit-26.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="24.0" prefWidth="57.0" text="Weight: " textFill="#3d5c98">
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <StackPane fx:id="memberWeightStackPane" prefHeight="24.0" prefWidth="117.0">
+                                       <children>
+                                          <Label fx:id="memberWeight" prefHeight="24.0" prefWidth="144.0" textFill="#3d5c98">
+                                             <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                    <ImageView fx:id="memberWeightModifyBtn" fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../Downloads/icons8-edit-26.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="24.0" prefWidth="57.0" text="Phone:" textFill="#3d5c98">
+                                       <font>
+                                          <Font name="Arial Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <StackPane fx:id="memberPhoneStackPane" prefHeight="24.0" prefWidth="117.0">
+                                       <children>
+                                          <Label fx:id="memberPhone" prefHeight="24.0" prefWidth="144.0" textFill="#3d5c98">
+                                             <font>
+                                                <Font name="Arial Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </StackPane>
+                                    <ImageView fx:id="memberPhoneModifyBtn" fitHeight="23.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../../../Downloads/icons8-edit-26.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="saveChangesBtn" mnemonicParsing="false" prefHeight="27.0" prefWidth="109.0" style="-fx-background-color: #3d5c98;" text="Save" textFill="WHITE">
+                                       <HBox.margin>
+                                          <Insets left="30.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="50.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="60.0" right="10.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" top="10.0" />
+                           </padding></VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

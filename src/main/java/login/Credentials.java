@@ -9,6 +9,7 @@ public class Credentials {
 	protected Credentials() {
 		loginInfo.put("admin", "123");
 		loginInfo.put("employee", "123");
+		loginInfo.put("member", "123");
 	}
 	
 	protected HashMap<String, String> getLoginInfo() {
